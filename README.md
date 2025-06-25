@@ -1,73 +1,52 @@
-# Convolutional Coding and Viterbi Decoding
+# Convolutional Coding and Viterbi Decoding - MATLAB Project
 
-This repository contains a MATLAB-based implementation and analysis of convolutional coding and Viterbi decoding—a widely used error-correction method in digital communication systems.
+This project simulates convolutional encoding and decoding using MATLAB, as part of our coursework in digital communication systems.
 
-## 🔍 Project Overview
+## Project Overview
 
-The primary aim of this project is to simulate the complete transmission chain using:
-- **Convolutional Encoding**
-- **BPSK Modulation**
-- **AWGN Channel Simulation**
-- **Soft and Hard Decision Viterbi Decoding**
+The goal was to understand and implement error correction using convolutional codes, and decode them using the Viterbi algorithm. The simulation covers:
 
-The goal is to evaluate system performance using Bit Error Rate (BER) as the key metric, under different noise conditions and coding parameters.
+- Encoding a binary input using convolutional codes
+- Modulating the encoded data using BPSK
+- Transmitting through an AWGN (Additive White Gaussian Noise) channel
+- Demodulating the received signal
+- Decoding the signal using hard or soft decision Viterbi decoding
 
----
+The project focuses on evaluating the effect of different constraint lengths, code rates, and SNR levels on bit error rate (BER) performance.
 
-## 📁 Project Structure
+## Structure
 
-- `Convolutional_Encoder.m`: MATLAB function to encode binary input using specified generator polynomials.
-- `state_table_generator.m`: Creates state transition data for decoding.
-- `BPSK_modulate.m`: Maps bits to symbols for transmission.
-- `add_AWGN_noise.m`: Adds noise to simulate channel imperfections.
-- `Demodulator.m`: Performs hard or soft demodulation based on input.
-- `Viterbi_Decoder.m`: Core implementation of Viterbi decoding using dynamic programming.
-- `main.m`: Script to run the full process (encode → modulate → add noise → decode).
-- `plots.m`: Code for plotting BER vs. SNR graphs.
-- `Convolutional_Codes_Project_Report.pdf`: Detailed write-up including background, equations, results, and theoretical analysis.
-- `CT216_G19[1].pptx`: Presentation slides for summarizing project insights.
+All code is written in a **single MATLAB file** that contains all relevant functions:
+- Encoding
+- State table generation
+- BPSK modulation and demodulation
+- Noise addition
+- Viterbi decoding (with support for both hard and soft decision)
 
----
+You can run the simulation by opening the main script in MATLAB and running it. Parameters such as SNR, code rate, input size, and decoding mode can be adjusted at the top of the file.
 
-## 🧠 Key Concepts
+## What You’ll Learn
 
-- **Constraint Length (Kc)**: Determines how many past bits influence the output.
-- **Code Rate (r)**: Ratio of input bits to output bits (e.g., 1/2 or 1/3).
-- **Generator Matrix (Octal)**: Defines how bits are combined for redundancy.
-- **Soft vs. Hard Decision Decoding**: Soft decision uses raw signal info; hard decision uses binary thresholding.
+- How convolutional encoders generate redundancy to support error correction
+- How modulation affects transmission in noisy channels
+- How Viterbi decoding (dynamic programming) recovers the most likely original message
+- The difference in accuracy between hard and soft decision decoding
 
----
+## Team Members
 
-## ⚙️ How to Use
+Project developed by Group G19 as part of CT216.  
+Team members:
+- Patel Dhruvil  
+- Vadodariya Jenish  
+- Tandel Dhruvinee  
+- Dhamecha Ayush  
+- Jainil Patel  
+- Meet Patel  
+- Hirapara Tarang  
+- Vasava Harshil  
+- Gori Faran  
+- Somaliya Vatsal
 
-1. Open the project folder in MATLAB.
-2. Run `main.m` to start the simulation.
-3. Adjust parameters like `SNR`, `Kc`, and code rate inside `main.m` to see how performance changes.
-4. Check the plotted graphs or exported data for BER performance.
+## For More Details
 
----
-
-## 📊 Observations
-
-- **Lower code rates** (e.g., 1/3) yield better error correction but at the cost of bandwidth.
-- **Higher constraint lengths** improve performance due to longer memory.
-- **Soft decision decoding** provides better BER than hard decision, especially in low SNR scenarios.
-
----
-
-## 📚 Reference Materials
-
-For more details, in-depth explanation of the Viterbi decoding algorithm, simulation results, and performance comparison:
-
-📄 View the full report: `Convolutional_Codes_Project_Report.pdf`  
-📊 Refer the presentation: `CT216_G19[1].pptx`
-
----
-
-## 🤝 Contributors
-
-Team G19  
-> Patel Dhruvil, Vadodariya Jenish, Tandel Dhruvinee, Dhamecha Ayush, Jainil Patel, Meet Patel, Hirapara Tarang, Vasava Harshil, Gori Faran, Somaliya Vatsal
-
----
-
+For a deeper explanation of the algorithms, system design, simulations, and results, refer to the full project report and presentation submitted with this project.
