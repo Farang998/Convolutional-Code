@@ -25,6 +25,9 @@ All code is written in a **single MATLAB file** that contains all relevant funct
 
 You can run the simulation by opening the main script in MATLAB and running it. Parameters such as SNR, code rate, input size, and decoding mode can be adjusted at the top of the file.
 
+## Simulation Result 
+<img width="490" alt="final_BER_all 1" src="https://github.com/user-attachments/assets/b61b4a57-9408-48e9-9a4e-c19b89a24f93" />
+
 ## Team Members
 
 Project developed by Group G19 as part of CT216.  
