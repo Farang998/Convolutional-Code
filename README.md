@@ -25,13 +25,6 @@ All code is written in a **single MATLAB file** that contains all relevant funct
 
 You can run the simulation by opening the main script in MATLAB and running it. Parameters such as SNR, code rate, input size, and decoding mode can be adjusted at the top of the file.
 
-## What You’ll Learn
-
-- How convolutional encoders generate redundancy to support error correction
-- How modulation affects transmission in noisy channels
-- How Viterbi decoding (dynamic programming) recovers the most likely original message
-- The difference in accuracy between hard and soft decision decoding
-
 ## Team Members
 
 Project developed by Group G19 as part of CT216.  
@@ -49,4 +42,4 @@ Team members:
 
 ## For More Details
 
-For a deeper explanation of the algorithms, system design, simulations, and results, refer to the full project report and presentation submitted with this project.
+For a deeper explanation of the algorithms, simulations, and results, refer to the full project report and presentation submitted with this project.
